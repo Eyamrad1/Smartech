@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="646.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLdeliveryController">
+   <children>
+      <Label fx:id="modifierLabel" layoutX="387.0" layoutY="235.0" prefHeight="18.0" prefWidth="112.0" />
+      <Pane prefHeight="645.0" prefWidth="610.0" style="-fx-background-color: FBECB2;">
+         <children>
+            <TextField fx:id="tfnom" layoutX="317.0" layoutY="115.0" prefHeight="41.0" prefWidth="149.0" />
+            <TextField fx:id="tfprenom" layoutX="317.0" layoutY="187.0" prefHeight="41.0" prefWidth="149.0" />
+            <TextField fx:id="tfadresse" layoutX="317.0" layoutY="265.0" prefHeight="41.0" prefWidth="149.0" />
+            <TextField fx:id="tfprix" layoutX="317.0" layoutY="346.0" prefHeight="41.0" prefWidth="149.0" />
+            <TextField fx:id="tfnbrecom" layoutX="317.0" layoutY="425.0" prefHeight="41.0" prefWidth="149.0" />
+            <Label layoutX="34.0" layoutY="432.0" text="nombre de commandes">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnajout" layoutX="28.0" layoutY="540.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="158.0" style="-fx-background-color: D4AC0D; -fx-background-radius: 10;" text="Ajouter" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnmodifier" layoutX="305.0" layoutY="540.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="172.0" style="-fx-background-color: D4AC0D; -fx-background-radius: 10;" text="Modifier" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Downloads/icon-edit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <Label layoutX="171.0" layoutY="40.0" prefHeight="34.0" prefWidth="255.0" text="delivery person" textAlignment="CENTER" textFill="#151fd6">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="272.0" text="adresse">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="193.0" prefHeight="30.0" prefWidth="83.0" text="prenom">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="121.0" prefHeight="17.0" prefWidth="55.0" text="nom">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="352.0" text="prix">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalDeliveriesLabel" layoutX="469.0" layoutY="85.0" />
+            <Label fx:id="inTransitDeliveriesLabel" layoutX="484.0" layoutY="195.0" />
+            <Label fx:id="deliveredDeliveriesLabel" layoutX="476.0" layoutY="261.0" prefHeight="17.0" prefWidth="0.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
