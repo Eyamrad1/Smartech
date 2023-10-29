@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FXMLafficherDeliveryController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="418.0" prefWidth="639.0" style="-fx-background-color: FBECB2;">
+         <children>
+            <ListView fx:id="myListeView" layoutX="33.0" layoutY="96.0" prefHeight="226.0" prefWidth="591.0" />
+            <Button fx:id="btnupdate" layoutX="33.0" layoutY="330.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="160.0" style="-fx-background-color: D4AC0D; -fx-background-radius: 10;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Button fx:id="btnmodifier1" layoutX="228.0" layoutY="329.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="160.0" style="-fx-background-color: D4AC0D; -fx-background-radius: 10;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Button fx:id="btnsupprimer" layoutX="439.0" layoutY="330.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="160.0" style="-fx-background-color: D4AC0D; -fx-background-radius: 10;" text="Supprimer" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Label contentDisplay="CENTER" layoutX="130.0" layoutY="28.0" prefHeight="35.0" prefWidth="309.0" text="delivery person list" textFill="#2f0ccf">
+               <font>
+                  <Font name="System Bold Italic" size="31.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnStatestiquee" layoutX="483.0" layoutY="51.0" mnemonicParsing="false" onAction="#handleBtnStatestiquee" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: D4AC0D; -fx-background-radius: 10;" text="voir statestique" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
